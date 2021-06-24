@@ -25,15 +25,15 @@ if __name__ == '__main__':
     ###################################################################################################################
     # Genetic Algorithm (GA)
 
-    gen1 = Gene(name='w1', encoding='binary', minv=0, maxv=2, length=6)
-    gen2 = Gene(name='w2', encoding='binary', minv=0, maxv=2, length=6)
-    gen3 = Gene(name='w3', encoding='binary', minv=0, maxv=2, length=6)
-    gen4 = Gene(name='w4', encoding='binary', minv=0, maxv=2, length=6)
-    gen5 = Gene(name='w5', encoding='binary', minv=0, maxv=2, length=6)
-    gen6 = Gene(name='w6', encoding='binary', minv=0, maxv=2, length=6)
-    gen7 = Gene(name='w7', encoding='binary', minv=0, maxv=2, length=6)
-    gen8 = Gene(name='w8', encoding='binary', minv=0, maxv=2, length=6)
-    gen9 = Gene(name='w9', encoding='binary', minv=0, maxv=2, length=6)
+    gen1 = Gene(name='w1', encoding='binary', minv=0, maxv=2, length=6)  # AF
+    gen2 = Gene(name='w2', encoding='binary', minv=0, maxv=2, length=6)  # I-AVB
+    gen3 = Gene(name='w3', encoding='binary', minv=0, maxv=2, length=6)  # LBBB
+    gen4 = Gene(name='w4', encoding='binary', minv=0, maxv=2, length=6)  # Normal
+    gen5 = Gene(name='w5', encoding='binary', minv=0, maxv=2, length=6)  # PAC
+    gen6 = Gene(name='w6', encoding='binary', minv=0, maxv=2, length=6)  # PVC
+    gen7 = Gene(name='w7', encoding='binary', minv=0, maxv=2, length=6)  # RBBB
+    gen8 = Gene(name='w8', encoding='binary', minv=0, maxv=2, length=6)  # STD
+    gen9 = Gene(name='w9', encoding='binary', minv=0, maxv=2, length=6)  # STE
 
     # chromosomes
     chr1 = Chromosome(genes=(gen1, gen2, gen3, gen4, gen5, gen6, gen7, gen8, gen9), name='chr1', mutation='uniform',
