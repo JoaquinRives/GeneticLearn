@@ -77,6 +77,7 @@ if __name__ == '__main__':
 
     environment = Environment(X=X, y=y, fitness_func=fitness_func)
     ###################################################################################################################
+    # Evolution
 
     # set the population environment to the new created sklearn environment
     population.environment = environment
@@ -89,7 +90,9 @@ if __name__ == '__main__':
     #
     index = history['fitness'].argmax()
 
-    winner = history.iloc[500]
+    winner = history.iloc[index]
+    
+    print(f"Winner is: {winner}")
 
     ###################################################################################################################
     # Test
