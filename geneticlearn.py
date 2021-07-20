@@ -660,7 +660,7 @@ class Population:
 
     """
 
-    # OJO !!! make sure the environment uses gridsearch before hand
+    # TODO !!! make sure the environment uses gridsearch before hand
     #       if hasattr(obj, 'attr_name'):   <--- This checks if the class as an attribute with that name
 
     allowed_parallel_modes = ['threading', 'multiprocessing', 'gridsearchCV']
@@ -1062,6 +1062,6 @@ class Population:
 
 
 class PopulationFS:  # TODO
-    # put it in another file
+    # Special population for Feature Selection...
     pass
 
